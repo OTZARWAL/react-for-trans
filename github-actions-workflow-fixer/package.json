@@ -1,0 +1,26 @@
+{
+  "name": "github-actions-workflow-fixer",
+  "displayName": "GitHub Actions Workflow Fixer",
+  "description": "Formats and repairs GitHub Actions workflow YAML files.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:yaml",
+    "onCommand:githubActionsWorkflowFixer.fixCurrentWorkflow"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "githubActionsWorkflowFixer.fixCurrentWorkflow",
+        "title": "Fix GitHub Actions Workflow YAML"
+      }
+    ]
+  }
+}
