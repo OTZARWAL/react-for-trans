@@ -11,14 +11,13 @@ on:
             - dev
 
 jobs:
-    build-and-test:
-        - name: Build and Test
-          runs-on: ubuntu-latest
+   build-and-test:
+     runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v2
+     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-            - name: checkn pull
-              runs: |
-                ls -a
+      - name: checkn pull
+        run: |
+          ls -a
